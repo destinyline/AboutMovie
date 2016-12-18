@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+        <TextView
+            android:id="@+id/titlemv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor Strange"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlemv"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="185dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/titlemv"
+                android:id="@+id/movie"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--story-->
+                <TextView
+                    android:id="@+id/story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="ว่าด้วยเรื่องราวของนายแพทย์ศัลยประสาทที่ประสบอุบัติเหตุจนได้ค้นพบกกับโลกเวทมนตร์และพลังเร้นลับ เฟส 3 ต่อจาก Captain America: Civil War"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="20dp" />
+                <!--director-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Director : "
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scott Derrickson"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+                <!--writer-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Writer : "
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scott Derrickson"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Star : "
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amy Landecker, Benedict Cumberbatch, Mads Mikkelsen, Rachel McAdams"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--story of movie-->
+
+        <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poster"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Rate"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--imdb-->
+                <LinearLayout
+                    android:id="@+id/imdb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        app:srcCompat="@drawable/imdb" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="8.1/10"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+                <!--fresh-->
+                <LinearLayout
+                    android:id="@+id/fresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        app:srcCompat="@drawable/rotten" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="8.1/10"
+                        android:textColor="#ffffff"/>
+
+                    <Button
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:background="#e0953a"
+                        android:text="Post Review"
+                        android:textSize="12sp"
+                        android:onClick="onClickcreate"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--about-->
+    <TextView
+        android:id="@+id/topfive"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:text="Reviews"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <!--review1-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RCVData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topfive"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        />
+
+
+    </RelativeLayout>
+

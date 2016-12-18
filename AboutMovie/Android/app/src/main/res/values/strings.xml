@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AboutMovie</string>
+    <string name="test">AboutMovie</string>
+    <string name="search_hint">search_hint</string>
+    <string name="menu_search">menu_search</string>
+    <string name="search_result">search_result</string>
+    <string name="image_url">ImageView from URL</string>
+    <string name="imageurl">ImageViewFromURL</string>
+
+</resources>
